@@ -5,8 +5,8 @@
 (defn toRecord [str]
   (def strArray
     (string/split str #"\|"))
-  {:last-name (nth strArray 0)
-   :first-name (nth strArray 1)
+  {:first-name (nth strArray 0)
+   :last-name (nth strArray 1)
    :gender (nth strArray 2)
    :favorite-color (nth strArray 3)
    :date-of-birth (nth strArray 4)})
