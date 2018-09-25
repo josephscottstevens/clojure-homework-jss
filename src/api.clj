@@ -6,7 +6,7 @@
             [core]))
 
 (defroutes app
-  (POST "/records" [] (resp/file-response (str "index.html")))
+  (POST "/records"  [data] (println "data")) ;core/append-to-file
   (GET "/records/gender" [] (generate-string (core/read-with-sort :gender)))
   (GET "/records/birthdate" [] (generate-string (core/read-with-sort :birthdate)))
   (GET "/records/name" [] (generate-string (core/read-with-sort :name))))

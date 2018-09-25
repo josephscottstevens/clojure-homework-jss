@@ -11,6 +11,14 @@
    :favorite-color (nth strArray 3)
    :date-of-birth (nth strArray 4)})
 
+(defn read-file
+  [fileName]
+  (with-open [rdr (io/reader (str "./resources/" fileName))]
+    (doall
+     (map toRecord
+          (drop 1
+                (line-seq rdr))))))
+
 (defn read-with-sort
   [sortField]
   (sort-by sortField
@@ -21,10 +29,10 @@
                   (read-file "data3.txt")))))
 
 
-(defn read-file
-  [fileName]
-  (with-open [rdr (io/reader (str "./resources/" fileName))]
-    (doall
-     (map toRecord
-          (drop 1
-                (line-seq rdr))))))
+
+(defn append-to-file
+  "Uses spit to append to a file specified with its name as a string, or
+   anything else that writer can take as an argument.  s is the string to
+   append."
+  [str]
+  (spit "./resources/data.txt" "str" :append true))
