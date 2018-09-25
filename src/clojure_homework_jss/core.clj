@@ -11,8 +11,9 @@
    :favorite-color (nth strArray 3)
    :date-of-birth (nth strArray 4)})
 
-(def read-file
-  (with-open [rdr (io/reader "./resources/data.txt")]
+(defn read-file
+  [fileName]
+  (with-open [rdr (io/reader (str "./resources/" fileName))]
     (doall
      (sort-by :gender
               (map toRecord
@@ -22,4 +23,4 @@
 (defn -main
   "Reads file from command line, and prints to screen"
   [& args]
-  (println read-file))
+  (println (read-file "data.txt")))
