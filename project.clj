@@ -1,9 +1,11 @@
-(defproject clojure-homework-jss "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.8.0"]]
-  :main ^:skip-aot clojure-homework-jss.core
-  :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+(defproject compojure-example "0.1.0-SNAPSHOT"
+  :description "Homework for Guarenteed Rate"
+  :url "http://localhost:3000/"
+  :dependencies [[org.clojure/clojure "1.6.0"]
+                 [compojure "1.1.8"]
+                 [cheshire "5.3.1"]]
+  :plugins [[lein-ring "0.8.11"]]
+  :ring {:handler api/app}
+  :profiles
+  {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
+                        [ring-mock "0.1.5"]]}})

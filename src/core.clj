@@ -1,4 +1,4 @@
-(ns clojure-homework-jss.core
+(ns core
   (:require [clojure.java.io :as io]
             [clojure.string :as string]))
 
@@ -20,7 +20,7 @@
                    (drop 1
                          (line-seq rdr)))))))
 
-(defn -main
-  "Reads file from command line, and prints to screen"
-  [& args]
-  (println (read-file "data.txt" :first-name)))
+; (defn -main
+;   "Reads file from command line, and prints to screen"
+;   [& args]
+;   (println (read-file "data.txt" :first-name)))
