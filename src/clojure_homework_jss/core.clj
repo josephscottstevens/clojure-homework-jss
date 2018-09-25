@@ -13,7 +13,11 @@
 
 (def read-file
   (with-open [rdr (io/reader "./resources/data.txt")]
-    (doall (map toRecord (line-seq rdr)))))
+    (doall
+     (sort-by :gender
+              (map toRecord
+                   (drop 1
+                         (line-seq rdr)))))))
 
 (defn -main
   "Reads file from command line, and prints to screen"
