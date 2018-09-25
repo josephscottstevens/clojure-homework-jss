@@ -2,11 +2,11 @@
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
             [ring.util.response :as resp]
+            [cheshire.core :refer :all]
             [core]))
 
 (defroutes app
-  (GET "/" [] (resp/file-response (str "index.html")))
-  (GET "/test" [] "<h1>test</h1>")
-  (GET "/test2" [] (str (core/read-file "data.txt" :first-name)))
-  (route/resources "/")
-  (route/not-found "<h1>Page not found</h1>"))
+  (POST "/records" [] (resp/file-response (str "index.html")))
+  (GET "/records/gender" [] (generate-string (core/read-with-sort :gender)))
+  (GET "/records/birthdate" [] (generate-string (core/read-with-sort :birthdate)))
+  (GET "/records/name" [] (generate-string (core/read-with-sort :name))))
