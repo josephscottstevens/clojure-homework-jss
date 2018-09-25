@@ -12,10 +12,10 @@
    :date-of-birth (nth strArray 4)})
 
 (defn read-file
-  [fileName]
+  [fileName sortField]
   (with-open [rdr (io/reader (str "./resources/" fileName))]
     (doall
-     (sort-by :gender
+     (sort-by sortField
               (map toRecord
                    (drop 1
                          (line-seq rdr)))))))
@@ -23,4 +23,4 @@
 (defn -main
   "Reads file from command line, and prints to screen"
   [& args]
-  (println (read-file "data.txt")))
+  (println (read-file "data.txt" :first-name)))
