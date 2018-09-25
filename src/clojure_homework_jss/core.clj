@@ -1,7 +1,10 @@
 (ns clojure-homework-jss.core
-  (:gen-class))
+  (:require [clojure.java.io :as io]))
+
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Reads file from command line, and prints to screen"
   [& args]
-  (println "Hello, World!"))
+  (with-open [rdr (io/reader "./resources/data.txt")]
+    (doseq [line (line-seq rdr)]
+      (println line))))
