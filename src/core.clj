@@ -3,14 +3,14 @@
             [clojure.string :as string]
             [clj-time.format :as f]))
 
-(defn parse-date
+(defn- parse-date
   "Parses string from dd/MM/yyyy form into java date object"
   [date-string]
   (.parse
    (java.text.SimpleDateFormat. "dd/MM/yyyy")
    date-string))
 
-(defn toRecord [str]
+(defn- toRecord [str]
   (def strArray
     (string/split str #"[ \|,]"))
   {:first-name (nth strArray 0)
@@ -19,7 +19,7 @@
    :favorite-color (nth strArray 3)
    :date-of-birth (parse-date (nth strArray 4))})
 
-(defn read-file
+(defn- read-file
   [file-name]
   (with-open [rdr (io/reader (str "./resources/" file-name))]
     (doall
@@ -34,7 +34,8 @@
                  (concat
                   (read-file "data.txt")
                   (read-file "data2.txt")
-                  (read-file "data3.txt")))))
+                  (read-file "data3.txt")
+                  (read-file "livedata.txt")))))
 
 
 
@@ -43,4 +44,4 @@
    anything else that writer can take as an argument. string-param is the string to
    append."
   [string-param]
-  (spit "./resources/data.txt" (str string-param) :append true))
+  (spit "./resources/livedata.txt" (str string-param) :append true))
