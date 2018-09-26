@@ -20,4 +20,3 @@
 (deftest append-test
   (testing "Test that files can be read and sorted via Last Name"
     (is (= (core/append-to-file test-value) nil))))
-
