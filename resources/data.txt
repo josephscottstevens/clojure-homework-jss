@@ -1,4 +1,3 @@
-FirstName|LastName|Gender|FavoriteColor|DateOfBirth
 Nasim|Bright|M|blue|15/04/2019
 Haley|Harrison|F|yellow|12/11/2017
 Tana|Lancaster|F|violet|11/04/2019
@@ -11,17 +10,22 @@ Victor|Mcdaniel|F|orange|10/03/2019
 Erica|Duncan|M|green|11/09/2018
 Lamar|Dejesus|F|yellow|22/11/2018
 Bethany|Sellers|M|green|21/04/2019
-Abraham|Gould|F|orange|30/07/2019
-Otto|Fry|F|yellow|10/11/2017
-Cassidy|Merritt|F|red|20/01/2018
-Brock|Gutierrez|F|green|29/04/2018
-Chantale|Powers|F|indigo|16/06/2019
-Aline|Shields|F|indigo|02/02/2019
-Kevyn|Valentine|F|indigo|29/12/2018
-Byron|Walton|F|green|15/04/2018
 Charity|Nelson|M|orange|29/10/2018
 Curran|Rogers|M|orange|20/01/2018
 Palmer|Massey|F|indigo|09/11/2018
+Alexandra Salinas F green 28/08/2019
+Ronan Henderson M violet 05/05/2019
+Jerome Faulkner M green 31/10/2017
+Idola Lara F green 02/01/2019
+Tanner England F indigo 08/03/2019
+Kay Cannon M red 09/06/2019
+Ursula Pennington F indigo 02/06/2018
+Hamish Castillo M blue 26/04/2018
+Odessa Giles F indigo 15/04/2018
+Quentin Strong F blue 11/08/2019
+Josiah Higgins M violet 09/05/2019
+Shea Stokes M indigo 11/12/2018
+Dillon Workman F green 05/09/2018
 Ori|Roberson|F|yellow|25/04/2019
 Bradley|Phelps|F|green|13/08/2019
 Yoshio|Velasquez|M|blue|19/12/2017
@@ -42,30 +46,6 @@ Charity|Beasley|F|violet|11/09/2018
 Kendall|Stein|F|blue|23/08/2019
 Heidi|Cameron|M|yellow|26/10/2018
 Ross|Hamilton|M|indigo|27/07/2019
-Kennan|Sellers|F|orange|04/12/2017
-Robert|Boyer|M|yellow|09/02/2018
-Aline|Pollard|F|violet|15/04/2019
-Camille|Woods|M|blue|09/05/2019
-Justine|Bishop|F|violet|04/01/2018
-Mohammad|Buckner|F|green|01/09/2018
-Tatyana|Morton|F|blue|28/01/2018
-Francesca|Finch|F|green|26/11/2017
-Dalton|Chambers|F|yellow|12/02/2019
-Shelby|Morrison|F|indigo|19/11/2017
-Orlando|Craig|M|indigo|05/12/2018
-Eugenia|Mullen|M|indigo|07/10/2018
-Leonard|Franklin|F|orange|28/01/2018
-Kim|Schultz|F|blue|07/03/2018
-Ursa|Blanchard|F|yellow|15/02/2019
-Zephr|Johns|F|blue|19/02/2018
-Germaine|Goodman|M|indigo|21/04/2019
-Nasim|Rush|F|yellow|02/04/2019
-Wynne|Russo|F|red|01/03/2018
-Adena|Short|F|green|24/06/2018
-Germane|Bradley|F|orange|12/04/2019
-Guinevere|Hebert|M|violet|27/05/2019
-Tashya|Pitts|M|green|24/02/2018
-Nero|Aguirre|M|yellow|12/11/2018
 Jenna|Gutierrez|F|blue|26/07/2019
 Derek|Gay|M|indigo|02/09/2018
 Kermit|Quinn|M|orange|26/08/2018
@@ -99,3 +79,55 @@ Yael|Clarke|F|blue|27/02/2019
 Quemby|Reeves|F|orange|27/08/2018
 Griffith|Wells|M|green|19/08/2018
 Leah|Garrison|M|indigo|12/07/2019
+Clark,Bennett,M,indigo,05/02/2018
+Pamela,Dominguez,M,orange,18/09/2019
+Armand,Head,F,blue,25/12/2017
+Keaton,Yang,F,green,13/04/2019
+Risa,Faulkner,M,orange,03/04/2018
+Salvador,Morse,F,green,31/05/2018
+Kathleen,Michael,M,violet,23/09/2018
+Honorato,Cooke,F,violet,06/03/2018
+Ferdinand,Whitaker,M,indigo,15/04/2019
+Lev,Medina,M,indigo,22/06/2019
+Leigh,Snyder,F,yellow,12/09/2018
+Audra,Osborn,M,orange,31/10/2017
+Riley,Burns,M,yellow,17/03/2018
+Rachel,Webster,M,blue,16/02/2019
+Bert,Dickson,F,blue,07/03/2019
+Samantha,Mcclain,M,red,28/12/2017
+Chester,Mosley,M,violet,27/03/2018
+Ivor Dunlap F indigo 23/04/2018
+Carter Watts M red 20/02/2018
+Axel Cotton F orange 21/01/2018
+Blake Chandler M violet 20/02/2019
+Len Brooks F yellow 12/12/2018
+Christen Carlson F yellow 03/03/2018
+August Byrd F red 23/09/2019
+Daquan Barton F yellow 13/08/2018
+Ferdinand Figueroa M indigo 17/05/2018
+Amal Valencia M blue 09/04/2018
+Peter Carrillo F red 05/09/2018
+Ocean,Vincent,M,yellow,10/08/2019
+Jasmine,Kidd,M,green,22/01/2019
+Hannah,Mclean,M,blue,10/03/2018
+Robin,Hardin,F,yellow,05/04/2018
+Ainsley,Delgado,M,orange,25/02/2019
+Rylee,Carter,M,red,15/03/2018
+Asher,Kline,F,red,03/06/2019
+Maisie,Sanford,F,indigo,13/01/2018
+Xerxes,Singleton,M,violet,13/06/2018
+Drew,Melton,M,blue,07/05/2019
+Uriel,Solomon,M,orange,21/06/2019
+Haviva,Whitaker,M,indigo,31/07/2019
+Lucius,Hendricks,M,orange,20/10/2017
+Keane,Rojas,M,orange,05/12/2017
+Chastity,Perez,M,blue,17/09/2018
+Maxine,Haley,F,red,29/10/2018
+Channing,Copeland,M,blue,01/01/2019
+Gary,Long,M,red,20/12/2018
+Lester,Knowles,F,green,09/08/2018
+Wynne,Burton,F,yellow,16/08/2019
+Vaughan,Woodard,F,green,03/01/2019
+Palmer,Walker,F,green,26/10/2017
+Nasim|Bright|M|blue|15/04/2019
+Nasim|Bright|M|blue|15/04/2019
