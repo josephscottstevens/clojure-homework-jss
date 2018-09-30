@@ -21,3 +21,8 @@
    (is (not (string/blank? load-resource-into-string-array)))
    (is (vector? load-resource-into-string-array))
    (is (< 1 (count load-resource-into-string-array)))))
+
+(deftest append
+  (testing 
+    "validate successful write to file location"
+    (is (= nil? (file/append "Nasim|Bright|M|blue|15/04/2019")))))

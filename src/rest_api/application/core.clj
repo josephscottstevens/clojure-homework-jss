@@ -22,4 +22,4 @@
   [string-param]
   (if (validation/record-string? string-param)
     (file/append string-param)
-    nil))
+    "Error occurred, please try again later or check your format"))

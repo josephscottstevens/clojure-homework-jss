@@ -24,7 +24,7 @@
 (deftest record-string?
   (testing
    "Validates string can be converted to record"
-    ; (is (true? (validation/record-string? "a|b|d|e|f")))
+    (is (true? (validation/record-string? "Nasim|Bright|M|blue|15/04/2019")))
     (is (false? (validation/record-string? "abcd")))
-    ; (is (nil? (validation/record-string? nil)))
+    (is (nil? (validation/record-string? nil)))
     ))

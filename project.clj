@@ -2,10 +2,9 @@
   "0.2.0"
   :description "Homework for Guarenteed Rate"
   :url "http://localhost:3000/"
-  :dependencies [[org.clojure/clojure "1.8.0"]
+  :dependencies [[org.clojure/clojure "1.9.0"]
                  [cheshire "5.6.3"]
                  [compojure "1.5.1"]
-                 [clj-time "0.14.4"]
                  [ring/ring-defaults "0.2.1"]
                  [ring/ring-json "0.4.0"]
                  [ring-json-response "0.2.0"]]
