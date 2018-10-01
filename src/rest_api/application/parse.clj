@@ -14,7 +14,7 @@
       :last-name (nth array-param 1)
       :gender (nth array-param 2)
       :favorite-color (nth array-param 3)
-      :date-of-birth (date/parse (nth array-param 4))}
+      :birthdate (date/parse (nth array-param 4))}
       nil
       ))
 

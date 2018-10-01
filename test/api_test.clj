@@ -19,7 +19,7 @@
     Validates map at index 0 contains the key last-name
     Validates map at index 0 contains the key gender
     Validates map at index 0 contains the key favorite-color
-    Validates map at index 0 contains the key date-of-birth
+    Validates map at index 0 contains the key birthdate
     Note: Not checking values since all values are optional and nil is valid
     "
     (let [response (api/routes (mock/request request-type path))]
@@ -28,7 +28,7 @@
       (is (contains? (first (json/read-str (:body response))) "last-name"))
       (is (contains? (first (json/read-str (:body response))) "gender"))
       (is (contains? (first (json/read-str (:body response))) "favorite-color"))
-      (is (contains? (first (json/read-str (:body response))) "date-of-birth"))))
+      (is (contains? (first (json/read-str (:body response))) "birthdate"))))
   )
 
 (deftest test-get-gender
