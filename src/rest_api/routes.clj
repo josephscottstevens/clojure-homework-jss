@@ -8,5 +8,5 @@
 (defroutes routes
   (GET "/records/gender" [] (json-response (core/read-and-sort-records :gender)))
   (GET "/records/birthdate" [] (json-response (core/read-and-sort-records :birthdate)))
-  (GET "/records/name" [] (json-response (core/read-and-sort-records :name)))
+  (GET "/records/name" [] (json-response (core/read-and-sort-records :last-name)))
   (POST "/records" [data] (json-response (core/append-to-file-if-valid data))))
