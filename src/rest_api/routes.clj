@@ -10,13 +10,12 @@
 
 (defn post-record
   [data]
-  (println (str "|!" data))
   (swap! records conj (parse/string-to-record data))
   "record added successfully")
-
+ 
 (defroutes routes
   (GET "/records/gender" [] (json-response (map parse/parse-date (sort core/by-gender-descending-and-last-name @records))))
   (GET "/records/birthdate" [] (json-response (map parse/parse-date (sort-by :birthdate @records))))
   (GET "/records/name" [] (json-response (map parse/parse-date (sort core/by-last-name-descending @records))))
-  (POST "/records" request (post-record (slurp (:body request))))
+  (POST "/records" request (post-record (:body request)))
   (route/not-found "Route not found"))
