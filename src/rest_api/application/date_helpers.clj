@@ -8,3 +8,10 @@
      (java.text.SimpleDateFormat. "dd/MM/yyyy")
      date-string)
   (catch Exception e nil)))
+
+(defn un-parse
+  "Parses java date object into M/D/YYYY string"
+  [date]
+  (.format 
+    (java.text.SimpleDateFormat. "MM/dd/yyyy")
+    date))

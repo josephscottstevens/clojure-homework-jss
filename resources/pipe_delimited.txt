@@ -1,0 +1,3 @@
+Adam|Smith|M|Red|05/02/2018
+Jane|Doe|F|Blue|01/01/2000
+Jane|Stevens|F|Green|02/02/1990

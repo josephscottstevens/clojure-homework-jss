@@ -3,7 +3,7 @@
             [rest-api.application.date-helpers :as date]
             ))
 
-(deftest parse-test
+(deftest parse
   (testing 
    "Test that valid date can be constructed
     Test that invalid dates cannot be constructed
@@ -12,3 +12,10 @@
     (is (nil? (date/parse "1/zy/2000")))
     (is (nil? (date/parse "")))
     (is (nil? (date/parse "a")))))
+
+(deftest un-parse
+  (testing
+   "Test that valid date can be constructed
+    Test that invalid dates cannot be constructed
+   "
+    (is (string? (date/un-parse (java.util.Date.))))))
